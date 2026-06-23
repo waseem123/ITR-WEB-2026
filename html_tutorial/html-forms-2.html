@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            color: white;
+            background-color: rgba(59, 57, 57, 0.726);
+        }
+    </style>
+</head>
+
+<body>
+    <form action="savedata">
+        <p>
+            <label for="">Name</label>
+            <input type="text" name="fullname" required>
+        </p>
+
+        <p>
+            <label for="">Email</label>
+            <input type="email" name="email" required>
+        </p>
+
+        <p>
+            <label for="">Mobile No</label>
+            <input type="tel" maxlength="10" minlength="10" name="contactno">
+        </p>
+
+        <p>
+            <label for="">Age</label>
+            <input type="number" name="age" min="18" max="150">
+        </p>
+
+        <p>
+            <label for="">Address</label>
+            <textarea rows="5" cols="30" name="address" id=""></textarea>
+        </p>
+        <p>
+            <label for="">Price Range</label>
+            <input type="range" name="pricerange" min="10" max="100" step="10">
+        </p>
+
+        <p>
+            <label for="">ID</label>
+            <input type="text" value="6089">
+        </p>
+        <p>
+            <input type="hidden" value="Panasonic" name="tv_brand">
+        </p>
+        <p>
+            <input type="text" value="Samsung" readonly name="mobile_brand">
+        </p>
+        <p>
+            <input style="height: 200px;width: 200px;" type="text" value="Oxygrand" disabled>
+        </p>
+        <input type="submit">
+        <input type="reset">
+    </form>
+</body>
+
+</html>
